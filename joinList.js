@@ -12,13 +12,13 @@
 // Write our function (we must define it too!) below
 // ...
 
-const joinList = function (contents) {
-  let concepts = ''
+const joinList = function(contents) {
+  let concepts = '';
   for (let i = 0; i < contents.length; i++) {
-    concepts +=  contents[i] + ',' + ' '
+    concepts +=  contents[i] + ',' + ' ';
   }
   let lastCharRemoved = concepts.slice(0, concepts.length - 2);
-  return lastCharRemoved
+  return lastCharRemoved;
 };
 
 
