@@ -17,7 +17,7 @@ const joinList = function (contents) {
   for (let i = 0; i < contents.length; i++) {
     concepts +=  contents[i] + ',' + ' '
   }
-  lastCharRemoved = concepts.slice(0, concepts.length - 2);
+  let lastCharRemoved = concepts.slice(0, concepts.length - 2);
   return lastCharRemoved
 };
 
