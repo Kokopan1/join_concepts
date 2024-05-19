@@ -12,13 +12,15 @@
 // Write our function (we must define it too!) below
 // ...
 
-const joinList = function(contents) {
-  let concepts = 'Today I learned about';
+const joinList = function (contents) {
+  let concepts = ''
   for (let i = 0; i < contents.length; i++) {
-    concepts += ' ' + contents[i];
+    concepts +=  contents[i] + ',' + ' '
   }
-  return concepts;
+  lastCharRemoved = concepts.slice(0, concepts.length - 2);
+  return lastCharRemoved
 };
+
 
 /* pesudo
 declare a variable concepts, its an empty string where we will store the string
